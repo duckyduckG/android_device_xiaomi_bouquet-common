@@ -31,6 +31,8 @@ on init
     # Uclamp tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 96
     write /proc/sys/kernel/sched_util_clamp_min 128
+    # walt rotate bigtasks
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
 
 on late-init
     # Start services for bootanim
